@@ -65,9 +65,8 @@ elif len(email[position_of_last_dot + 1:]) < 2:
 elif position_of_first_dot == 0:
     print(error_message_invalid_username)
 #Task 10
-if position_of_first_dot_after_the_at == 1:
+elif email[position_of_at + 1:position_of_at + 2] == ".":
     print(error_message_no_server_name)
-
 #Task 11
-#else:
- #   print(ok_message)
+else:
+   print(ok_message)
