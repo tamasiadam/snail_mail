@@ -59,8 +59,8 @@ elif position_of_first_dot_after_the_at < 1:
 elif position_of_last_dot == length_of_email -1:
     print(error_message_no_tld)
 #Task 8
-# elif
-#     print(error_message_short_tld)
+elif len(email[position_of_last_dot + 1:]) < 2:
+    print(error_message_short_tld)
 #Task 9
 elif position_of_first_dot == 0:
     print(error_message_invalid_username)
@@ -69,5 +69,5 @@ if position_of_first_dot_after_the_at == 1:
     print(error_message_no_server_name)
 
 #Task 11
-else:
-    print(ok_message)
+#else:
+ #   print(ok_message)
